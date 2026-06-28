@@ -18,6 +18,10 @@ def addgame():
            "year":year}
     
 
+
+def viewgames():
+    if not games:
+        print("no games found")
 def tojson():
 
     with open("rev_json.json","w") as file:
