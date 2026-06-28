@@ -26,7 +26,6 @@ def viewgames():
     for game in games:
         print(f"Game: {game['name']} | Price: {game['price']} | Year: {game['year']}")
 
-#might noy work lol
 def tojson():
 
     with open("rev_json.json","w") as file:
