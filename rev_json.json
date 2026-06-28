@@ -1,1 +1,12 @@
-[{"name": "cod", "price": 1500.0, "year": 2023}, {"name": "pubg", "price": 0.0, "year": 2011}]
+[
+    {
+        "name": "pubg",
+        "price": 2011.0,
+        "year": 0
+    },
+    {
+        "name": "cod",
+        "price": 1500.0,
+        "year": 2025
+    }
+]

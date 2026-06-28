@@ -30,7 +30,7 @@ def tojson():
 
     with open("rev_json.json","w") as file:
 
-        json.dump(games,file)
+        json.dump(games,file,indent=4)
 
 
 
