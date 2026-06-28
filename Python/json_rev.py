@@ -13,18 +13,18 @@ def addgame():
     price=float(input("Enter Game price: "))
     year=int(input("Enter Release Year"))
 
-    games={"name":gm,
+    games.append({"name":gm,
            "price":price,
            "year":year}
-    
+    )
 
 
 def viewgames():
     if not games:
         print("no games found")
-    
-    for gm,pr,yr in games:
-        print(f"Game: {gm} | Price: {pr} | Year: {yr}")
+        return 
+    for game in games:
+        print(f"Game: {game['name']} | Price: {game['price']} | Year: {game['year']}")
 
 #might noy work lol
 def tojson():
@@ -35,16 +35,27 @@ def tojson():
 
 
 
-
 while True:
-    print("OPTIONS:\n1. addGame:\n2. SaveGames")
+    print("\nOPTIONS")
+    print("1. Add Game")
+    print("2. View Games")
+    print("3. Save Games")
+    print("4. Exit")
 
-    ch=int(input("Enter option: "))
-    if ch==1:
+    ch = int(input("Enter option: "))
+
+    if ch == 1:
         addgame()
-    elif ch==2:
+
+    elif ch == 2:
+        viewgames()
+
+    elif ch == 3:
         tojson()
-    else:
-        print("Exiting....")
+
+    elif ch == 4:
+        print("Exiting...")
         break
 
+    else:
+        print("Invalid option.")
