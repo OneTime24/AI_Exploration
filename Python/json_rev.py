@@ -35,4 +35,7 @@ while True:
     elif ch==2:
         tojson()
 
+    else:
+        print("Exiting....")
+        break
 
