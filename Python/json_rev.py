@@ -29,6 +29,10 @@ print("OPTIONS:\n1. addGame:\n2. SaveGames")
 
 ch=int(input("Enter option: "))
 
-
+while True:
+    if ch==1:
+        addgame()
+    elif ch==2:
+        tojson()
 
 
