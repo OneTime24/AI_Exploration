@@ -22,6 +22,11 @@ def addgame():
 def viewgames():
     if not games:
         print("no games found")
+    
+    for gm,pr,yr in games:
+        print(f"Game: {gm} | Price: {pr} | Year: {yr}")
+
+#might noy work lol
 def tojson():
 
     with open("rev_json.json","w") as file:
