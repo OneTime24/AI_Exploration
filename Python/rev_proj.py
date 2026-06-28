@@ -22,5 +22,4 @@ create_student(
     semester=3
 )
 
-
 #more stuffs

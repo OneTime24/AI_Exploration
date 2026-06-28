@@ -25,16 +25,16 @@ def tojson():
         json.dump(games,file)
 
 
-print("OPTIONS:\n1. addGame:\n2. SaveGames")
 
-ch=int(input("Enter option: "))
 
 while True:
+    print("OPTIONS:\n1. addGame:\n2. SaveGames")
+
+    ch=int(input("Enter option: "))
     if ch==1:
         addgame()
     elif ch==2:
         tojson()
-
     else:
         print("Exiting....")
         break
