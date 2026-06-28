@@ -33,6 +33,20 @@ def sum(*all):
     
     return total
 
+def total(**stuffs):
+
+    total = 0
+
+    for name, price in stuffs.items():
+        total += price
+
+    print("All Items:")
+
+    for name, price in stuffs.items():
+        print(f"{name} | {price}")
+
+    return total
+
 
 print(sum(1,2,3,4,5))
 
@@ -52,4 +66,10 @@ stuffs=[
 
 # print(stuffs)
 
-for 
+
+for i in stuffs:
+    print(i["item"])
+    print(i["price"])
+
+
+print(total(pen=20,paper=30,pencil=50))
