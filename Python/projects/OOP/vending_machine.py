@@ -32,4 +32,4 @@ class VendingMachine:
 
 machine=VendingMachine(5,1000)
 
-machine.buy(2,200)
+machine.buy(2,5000)
