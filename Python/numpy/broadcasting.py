@@ -13,7 +13,7 @@ arr1=arr1.reshape(3,2)
 
 arr2=np.array([10,10])
 
-print(arr1+arr2)
+# print(arr1+arr2)
 
 arr1=arr1*10
 
