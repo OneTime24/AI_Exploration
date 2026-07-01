@@ -36,3 +36,15 @@ print(np.sort(marks))
 
 print("\nIndices after Sorting:")
 print(np.argsort(marks))
+
+
+filter_pass=marks[marks>=50]
+print(filter_pass)
+
+print(len(filter_pass))
+filter_fail=marks[marks<50]
+print(len(filter_fail))
+
+for std in filter_pass:
+    print((std/160)*100)
+
