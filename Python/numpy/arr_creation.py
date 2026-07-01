@@ -22,3 +22,9 @@ arr5=np.linspace(0,20,10)
 
 print(arr5)
 
+
+arr6=np.arange(0,10)
+new_arr6=arr6.reshape(5,2)
+
+print(new_arr6)
+
