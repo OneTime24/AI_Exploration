@@ -12,7 +12,7 @@ arr2=np.array([[1,1],
                [3,3]])          #3/2
 
 
-print(arr1*arr2)
+# print(arr1*arr2)        ##cause error cuz need same row/col
 
 print(arr1@arr2)
 
